@@ -1,0 +1,46 @@
+{
+  "name": "@rockawayx/remix-utils",
+  "version": "0.0.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "sideEffects": false,
+  "license": "MIT",
+  "scripts": {
+    "build": "tsup-node",
+    "lint": "eslint \"src/**/*.ts*\"",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
+    "typecheck": "tsc -b"
+  },
+  "dependencies": {
+    "superjson": "^1.9.1"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.37",
+    "eslint": "^8.36.0",
+    "eslint-config-rockawayx": "workspace:*",
+    "tsconfig": "workspace:*",
+    "tsup": "^6.5.0",
+    "typescript": "^4.9.5"
+  },
+  "peerDependencies": {
+    "react": ">=17.0.0",
+    "@remix-run/node": "^1.8.0",
+    "@remix-run/react": "^1.8.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:RBFLabs/packages.git",
+    "directory": "packages/remix-utils"
+  }
+}
