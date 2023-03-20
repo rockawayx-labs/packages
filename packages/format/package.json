@@ -31,7 +31,8 @@
     "decimal.js": "^10.3.1"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://npm.pkg.github.com/@rockawayx"
   },
   "repository": {
     "type": "git",
