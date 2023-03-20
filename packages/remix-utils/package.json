@@ -36,7 +36,8 @@
     "@remix-run/react": "^1.8.0"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://npm.pkg.github.com/@rockawayx"
   },
   "repository": {
     "type": "git",

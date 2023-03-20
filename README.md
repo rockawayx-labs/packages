@@ -12,10 +12,20 @@ This turborepo uses [pnpm](https://pnpm.io) as a package manager. It includes th
 - `format`: shared packages for formatting text, numbers, tokens
 - `utils`: common ts utility functions
 
-### Build
+## Build
 
 To build all apps and packages, run the following command:
 
 ```
 pnpm run build
 ```
+
+## Release
+
+To release packages with changeset, run the following command:
+
+```
+pnpm run changeset
+```
+
+Then create PR to base branch and subsequent Release PR will be created automatically.
